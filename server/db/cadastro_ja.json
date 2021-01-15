@@ -1,7 +1,29 @@
 {
-    "12312312358": {
-        "name": "Rafael Daigo",
+    "12312312323": {
+        "name": "Fulano",
         "endereco": "rua blablã",
+        "estado": "SP",
+        "area_interesse": [
+            "programação",
+            "design",
+            "administração"
+        ],
+        "genero": [
+            "hetero trans"
+        ],
+        "identificacao_comunidade": {
+            "sn": "nao",
+            "qual_comunidade": ""
+        },
+        "etnia": "branco",
+        "habilidades": [
+            "comunicação",
+            "programação"
+        ]
+    },
+    "38511134552": {
+        "name": "Rafael Daigo",
+        "endereco": "rua Bumbum tantan",
         "estado": "SP",
         "area_interesse": [
             "programação",
@@ -15,7 +37,7 @@
             "sn": "nao",
             "qual_comunidade": ""
         },
-        "etnia": "amarelo",
+        "etnia": "amarela",
         "habilidades": [
             "comunicação",
             "programação"
