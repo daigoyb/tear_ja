@@ -1,0 +1,24 @@
+{
+    "12312312358": {
+        "name": "Rafael Daigo",
+        "endereco": "rua blablã",
+        "estado": "SP",
+        "area_interesse": [
+            "programação",
+            "design",
+            "administração"
+        ],
+        "genero": [
+            "hetero cis"
+        ],
+        "identificacao_comunidade": {
+            "sn": "nao",
+            "qual_comunidade": ""
+        },
+        "etnia": "amarelo",
+        "habilidades": [
+            "comunicação",
+            "programação"
+        ]
+    }
+}
