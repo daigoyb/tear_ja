@@ -1,12 +1,9 @@
 from flask import Flask, request
-import time, json
+import pprint, json
 import os.path
 
 app = Flask(__name__)
-
-@app.route('/time')
-def get_current_time():
-    return {"time": time.time()}
+pp = pprint.PrettyPrinter(indent=4)
 
 #rotas fluxo JA
 @app.route('/cadastro_ja', methods=['POST']) #cadastro jovem aprendiz
@@ -25,7 +22,8 @@ def cadastro_ja():
                 "qual_comunidade": data['identificacao_comunidade']['qual']
             },
             "etnia": data['etnia'],
-            "habilidades": data['habilidades']
+            "habilidades": data['habilidades'],
+            "vaga_preferencia": data['vaga_preferencia']
         }}
         if os.path.isfile('db/cadastro_ja.json'): # se o arquivo já existir
             with open('db/cadastro_ja.json', 'r', encoding='utf-8') as ja_file:
@@ -45,12 +43,52 @@ def cadastro_ja():
 
 @app.route('/get_empregos', methods=['GET'])
 def get_empregos():
-    if request.method == 'GET':
-        habilidades_empresa = []
-        interesses_ja = []
+    if request.method == 'GET' and request.args['id']:
+        referencias_emprego = {}
+        interesses_ja = {}
+        ja_id = request.args['id']
         with open('db/cadastro_emp.json', encoding='utf-8') as emp_file, open('db/cadastro_ja.json') as ja_file:
             # comparar habilidades desejadas da empresa e interesses do JA
-
+            empresas = json.load(emp_file)
+            list_ja = json.load(ja_file)
+            for key in empresas: # pegar o cnpj
+                referencias_emprego[key] = empresas[key]["vagas"]
+            ja = list_ja[ja_id]
+            hab_int = ja['habilidades'] + ja['area_interesse']
+            interesses_ja[ja_id] = {
+                "interesse": hab_int,
+                "vaga_preferencia": ja['vaga_preferencia'],
+                "identificacao": ja['identificacao_comunidade'],
+                "identificacao_gen_sex": ja['genero'],
+                "etnia": ja['etnia']
+            }
+            emp_file.close()
+            ja_file.close()
+        ja_ref = interesses_ja[ja_id]
+        send_data = {}
+        for referencia in referencias_emprego:
+            for i in range(len(referencias_emprego[referencia])):
+                vaga = referencias_emprego[referencia][i]
+                id_vaga = referencia + '_' + str(i)
+                send_data[id_vaga] = {
+                    'nome_vaga': vaga['nome_vaga'],
+                    'desc_vaga': vaga['descricao_vaga'], 
+                    'points': 0
+                }
+                for pub_esp in vaga['publico_especifico']:
+                    if pub_esp ==  ja_ref['identificacao_gen_sex'] or pub_esp == ja_ref['identificacao']['qual_comunidade'] or pub_esp == ja_ref['etnia']:
+                        send_data[id_vaga]['points'] += 50
+                        break
+                for interesse in ja_ref['interesse']:
+                    for habilidades in vaga['habilidades']:
+                        if interesse == habilidades:
+                            send_data[id_vaga]['points'] +=25
+                            break
+                for tipo_vaga in vaga['tipo_vaga']:
+                    if ja_ref['vaga_preferencia'] == tipo_vaga:
+                        send_data[id_vaga]['points'] += 25
+                        break      
+        return send_data            
 
 
 

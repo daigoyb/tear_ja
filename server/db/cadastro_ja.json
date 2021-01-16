@@ -1,5 +1,5 @@
 {
-    "38511134552": {
+    "12312312323": {
         "name": "Rafael Daigo",
         "endereco": "rua Bumbum tantan",
         "estado": "SP",
@@ -8,9 +8,7 @@
             "design",
             "administração"
         ],
-        "genero": [
-            "hetero cis"
-        ],
+        "genero": "hetero cis",
         "identificacao_comunidade": {
             "sn": "nao",
             "qual_comunidade": ""
@@ -19,6 +17,56 @@
         "habilidades": [
             "comunicação",
             "programação"
+        ],
+        "vaga_preferencia": [
+            "Home office"
+        ]
+    },
+    "12345678912": {
+        "name": "adsad",
+        "endereco": "rua Bumbum tantan",
+        "estado": "SP",
+        "area_interesse": [
+            "programação",
+            "design",
+            "administração"
+        ],
+        "genero": "",
+        "identificacao_comunidade": {
+            "sn": "sim",
+            "qual_comunidade": "LGBTQIA+"
+        },
+        "etnia": "Negro",
+        "habilidades": [
+            "comunicação",
+            "programação"
+        ],
+        "vaga_preferencia": [
+            "Home office"
+        ]
+    },
+    "68598715956": {
+        "name": "tubarao",
+        "endereco": "rua Bumbum tantan",
+        "estado": "SP",
+        "area_interesse": [
+            "cratividade",
+            "matematica",
+            "administração"
+        ],
+        "genero": "homossexual cis",
+        "identificacao_comunidade": {
+            "sn": "nao",
+            "qual_comunidade": ""
+        },
+        "etnia": "branca",
+        "habilidades": [
+            "comunicação",
+            "programação"
+        ],
+        "vaga_preferencia": [
+            "home office",
+            "presencial"
         ]
     }
 }

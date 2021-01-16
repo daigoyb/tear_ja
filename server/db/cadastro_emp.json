@@ -16,6 +16,13 @@
                     "Creuzedete Roitchman",
                     "Severine Augusta",
                     "Geraldine François"
+                ],
+                "tipo_vaga": [
+                    "home office",
+                    "presencial"
+                ],
+                "publico_especifico": [
+                    "LGBTQIA+"
                 ]
             },
             {
@@ -30,7 +37,11 @@
                     "Creuzedete Roitchman",
                     "Severine Augusta",
                     "Geraldine François"
-                ]
+                ],
+                "tipo_vaga": [
+                    "home office"
+                ],
+                "publico_especifico": []
             },
             {
                 "nome_vaga": "Designer",
@@ -44,6 +55,147 @@
                     "Creuzedete Roitchman",
                     "Severine Augusta",
                     "Geraldine François"
+                ],
+                "tipo_vaga": [
+                    "Presencial"
+                ],
+                "publico_especifico": [
+                    "Negro",
+                    "LGBTQIA+"
+                ]
+            }
+        ]
+    },
+    "025.765.12.0001-21": {
+        "name_emp": "Sou Rickaa!",
+        "endereco": "rua blablã",
+        "estado": "SP",
+        "vagas": [
+            {
+                "nome_vaga": "Dev",
+                "descricao_vaga": "Pessoa com vontade de programar",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ],
+                "tipo_vaga": [
+                    "home office, presencial"
+                ],
+                "publico_especifico": [
+                    "LGBTQIA+"
+                ]
+            },
+            {
+                "nome_vaga": "Contador",
+                "descricao_vaga": "Jovem com facilidade em matemática",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ],
+                "tipo_vaga": [
+                    "home office"
+                ],
+                "publico_especifico": []
+            },
+            {
+                "nome_vaga": "Designer",
+                "descricao_vaga": "Jovem que gosta de desenho e tenha criatividade",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ],
+                "tipo_vaga": [
+                    "Presencial"
+                ],
+                "publico_especifico": [
+                    "Negro",
+                    "LGBTQIA+"
+                ]
+            }
+        ]
+    },
+    "035.765.22.0003-21": {
+        "name_emp": "Sou Rickaa!",
+        "endereco": "rua blablã",
+        "estado": "SP",
+        "vagas": [
+            {
+                "nome_vaga": "Dev",
+                "descricao_vaga": "Pessoa com vontade de programar",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ],
+                "tipo_vaga": [
+                    "home office, presencial"
+                ],
+                "publico_especifico": [
+                    "LGBTQIA+",
+                    "homossexual trans",
+                    "homossexual cis"
+                ]
+            },
+            {
+                "nome_vaga": "Contador",
+                "descricao_vaga": "Jovem com facilidade em matemática",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ],
+                "tipo_vaga": [
+                    "home office"
+                ],
+                "publico_especifico": []
+            },
+            {
+                "nome_vaga": "Designer",
+                "descricao_vaga": "Jovem que gosta de desenho e tenha criatividade",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ],
+                "tipo_vaga": [
+                    "Presencial"
+                ],
+                "publico_especifico": [
+                    "Negro",
+                    "LGBTQIA+"
                 ]
             }
         ]
