@@ -1,0 +1,51 @@
+{
+    "025.765.12.0001-25": {
+        "name_emp": "Sou Rickaa!",
+        "endereco": "rua blablã",
+        "estado": "SP",
+        "vagas": [
+            {
+                "nome_vaga": "Dev",
+                "descricao_vaga": "Pessoa com vontade de programar",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ]
+            },
+            {
+                "nome_vaga": "Contador",
+                "descricao_vaga": "Jovem com facilidade em matemática",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ]
+            },
+            {
+                "nome_vaga": "Designer",
+                "descricao_vaga": "Jovem que gosta de desenho e tenha criatividade",
+                "habilidades": [
+                    "computação",
+                    "matemática",
+                    "criatividade"
+                ],
+                "mentores": [
+                    "Creuzedete Roitchman",
+                    "Severine Augusta",
+                    "Geraldine François"
+                ]
+            }
+        ]
+    }
+}

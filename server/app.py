@@ -43,3 +43,44 @@ def cadastro_ja():
             return 'Cadastrado - Arquivo criado'
     return 'nao entrou no post'
 
+@app.route('/get_empregos', methods=['GET'])
+def get_empregos():
+    if request.method == 'GET':
+        habilidades_empresa = []
+        interesses_ja = []
+        with open('db/cadastro_emp.json', encoding='utf-8') as emp_file, open('db/cadastro_ja.json') as ja_file:
+            # comparar habilidades desejadas da empresa e interesses do JA
+
+
+
+
+# Rotas Fluxo Empresa
+@app.route('/cadastro_emp', methods=['POST']) #cadastro empresa
+def cadastro_emp():
+    if request.method == "POST":
+        data = request.get_json()
+        dct_data = {data['cnpj']: {
+                    "name_emp": data['name_emp'],
+                    "endereco": data['endereco'],
+                    "estado": data['estado'],
+                    "vagas": data['vagas'],
+                }}
+        print(dct_data)
+        if os.path.isfile('db/cadastro_emp.json'): #Arquivo não existe
+            with open('db/cadastro_emp.json', 'r', encoding='utf-8') as file_empresa:
+                json_data = json.load(file_empresa)
+                file_empresa.close()
+            json_data.update(dct_data)
+            with open('db/cadastro_emp.json', 'w', encoding='utf-8') as emp_file:
+                json.dump(json_data, emp_file, ensure_ascii=False, indent=4)
+                emp_file.close()
+            return 'Cadastrado doc empresas atualizado'
+        else: #arquivo Existe
+            with open('db/cadastro_emp.json', 'w', encoding='utf-8') as emp_file:
+                json.dump(dct_data, emp_file, ensure_ascii=False, indent=4)
+                emp_file.close()
+            return 'Cadastrado doc empresas criado'
+    return 'nao entrou no post'
+
+if __name__ == "__main__":
+    app.run()
