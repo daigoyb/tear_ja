@@ -1,0 +1,101 @@
+.nav-wrapper{
+    padding-left: 15rem; 
+    padding-right: 15rem;
+    background-color: #212121;
+}
+
+.li{
+    display: flex;
+}
+
+.bold{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #BF360C;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #a8a4a2;
+}
+
+.navButton a{
+    color: white;
+    font-weight: bold;
+}
+
+.brand{
+    color: #BF360C;
+}
+
+.firstPage{
+    display: flex;
+    padding-left: 14.8rem;
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../Assets/Mask.png") cover;
+}
+
+.d-flex{
+    display:flex; 
+    flex-direction: column;
+    width: 90rem;
+    
+}
+
+.d-flex h1{
+    margin-top: 10rem;
+    font-size: 130px;
+    overflow-y: hidden;
+    /* letter-spacing: 10px; */
+}
+
+.d-flex h2{
+    
+    font-size: 75px;
+    overflow-y: hidden;
+    /* letter-spacing: 10px; */
+}
+
+.d-flex .btn{
+    margin-top: 2rem;
+    width: 20rem;
+    height: 4rem;
+}
+
+.d-flex2{
+    display: flex; 
+    align-items: center;
+}
+
+.d-flex2 a:last-child{
+    color: white;
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+    font-size: 24px;
+}
+
+.brand2{
+    padding-top: 0.7rem;
+    font-size: 24px;
+    color: white;
+}
+
+.display-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    padding-left: 14.8rem;
+    padding-right: 14.8rem;
+}
+
+.imgCircle{
+    width: 10rem;
+    height: 10rem;
+}
