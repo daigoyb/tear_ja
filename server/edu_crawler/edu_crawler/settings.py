@@ -9,8 +9,23 @@
 
 BOT_NAME = 'edu_crawler'
 
+FEED={
+    'items.json':{
+        'format':'json',
+        'encoding': 'utf8',
+        'store_empty': False,
+        'fields': None,
+        'indent': 4,
+        'item_export_kwargs': {
+        'export_empty_fields': True,
+        },
+    }
+}
 SPIDER_MODULES = ['edu_crawler.spiders']
 NEWSPIDER_MODULE = 'edu_crawler.spiders'
+FEED_FORMAT="json"
+FEED_EXPORT_ENCODING='utf-8'
+FEED_URI="cursos.json"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
