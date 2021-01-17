@@ -1,4 +1,21 @@
-.nav-wrapper{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nav-wrapper{
     padding-left: 15rem; 
     padding-right: 15rem;
     background-color: #212121;
@@ -52,22 +69,23 @@
     font-size: 130px;
     overflow-y: hidden;
     /* letter-spacing: 10px; */
-}
+/* }
 
 .d-flex h2{
     
     font-size: 75px;
     overflow-y: hidden;
-    /* letter-spacing: 10px; */
-}
+    /* letter-spacing: 10px;
+} */
+/* 
 
 .d-flex .btn{
     margin-top: 2rem;
     width: 20rem;
     height: 4rem;
-}
+} */
 
-.d-flex2{
+/* .d-flex2{
     display: flex; 
     align-items: center;
 }
@@ -93,9 +111,9 @@
 .container{
     padding-left: 14.8rem;
     padding-right: 14.8rem;
-}
-
+} */
+/*
 .imgCircle{
     width: 10rem;
     height: 10rem;
-}
+} */ 
