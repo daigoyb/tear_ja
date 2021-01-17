@@ -1,9 +1,10 @@
-#header_container{
+#main_container{
     position: absolute;
-    height: 80%;
+}
+#header_container{
+    height: 80vh;
     left: 0%;
     right: 0%;
-    top: 64px;
     /* PRIMARY GREEN 0 */
     background: #00695C;
     display: flex;
@@ -51,6 +52,15 @@
     line-height: 36px;
     color: #BF360C;
 }
+#logo_text_white{
+    font-family: 'Averia Sans Libre';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.4rem;
+    color: #FFF3E0;
+    display: flex;
+    align-items: center;
+}
 
 #logo{
     font-family: 'Averia Sans Libre';
@@ -83,125 +93,88 @@
     align-self: center;
     margin-left: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .nav-wrapper{
-    padding-left: 15rem; 
-    padding-right: 15rem;
-    background-color: #212121;
+#container_inclusao{
+    width: 1440px;
+    height: 1010px;
+    left: 0px;
+    background-color: #004D40;
 }
-
-.li{
+#container_texto_inclusao{
     display: flex;
+    align-items: flex-start;
+    margin-top: 80px;
 }
-
-.bold{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.btn{
-    background-color: #BF360C;
-    color: white;
-}
-
-.btn:hover{
-    background-color: #a8a4a2;
-}
-
-.navButton a{
-    color: white;
-    font-weight: bold;
-}
-
-.brand{
-    color: #BF360C;
-}
-
-.firstPage{
+#text_container_inclusao{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2rem;
+    /* or 138% */
+    
     display: flex;
-    padding-left: 14.8rem;
-    justify-content: start;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../../Assets/Mask.png") cover;
-}
-
-.d-flex{
-    display:flex; 
-    flex-direction: column;
-    width: 90rem;
-    
-}
-
-.d-flex h1{
-    margin-top: 10rem;
-    font-size: 130px;
-    overflow-y: hidden;
-    /* letter-spacing: 10px; */
-/* }
-
-.d-flex h2{
-    
-    font-size: 75px;
-    overflow-y: hidden;
-    /* letter-spacing: 10px;
-} */
-/* 
-
-.d-flex .btn{
-    margin-top: 2rem;
-    width: 20rem;
-    height: 4rem;
-} */
-
-/* .d-flex2{
-    display: flex; 
     align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    /* SECONDARY 0 */
+    color: #FFF3E0;
 }
-
-.d-flex2 a:last-child{
-    color: white;
-    margin-top: 1.3rem;
-    margin-left: 2rem;
-    font-size: 24px;
+#container_mockups_inclusao{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.brand2{
-    padding-top: 0.7rem;
-    font-size: 24px;
-    color: white;
-}
-
-.display-flex{
+#card_mockup{
     display: flex;
     flex-direction: column;
 }
+#p_small_bold{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #FFF3E0;
+    margin-top: 50px;
+}
+#text_helper{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
 
-.container{
-    padding-left: 14.8rem;
-    padding-right: 14.8rem;
-} */
-/*
-.imgCircle{
-    width: 10rem;
-    height: 10rem;
-} */ 
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFF3E0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 12rem;
+    white-space: initial;
+    overflow: hidden;
+    margin-left: 2rem;
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
