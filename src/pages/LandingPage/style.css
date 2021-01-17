@@ -1,3 +1,91 @@
+#header_container{
+    position: absolute;
+    height: 80%;
+    left: 0%;
+    right: 0%;
+    top: 64px;
+    /* PRIMARY GREEN 0 */
+    background: #00695C;
+    display: flex;
+    align-items: center;
+}
+#h3_maincall{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 0.05em;
+    /* SECONDARY 0 */
+    color: #FFF3E0;
+    line-height: 80px;
+}
+#h5_subcall{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    /* line-height: px; */
+    /* or 150% */
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    color: #FFF3E0;
+    padding-left: 10%;
+    align-self: initial;
+}
+#header_subcall{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+#header_subcall_2{
+    margin-top: 65px;
+    margin-left: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+#logo_text{
+    font-family: 'Averia Sans Libre';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 36px;
+    color: #BF360C;
+}
+
+#logo{
+    font-family: 'Averia Sans Libre';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    color: #BF360C;
+}
+#button-header{
+    background-color: #BF360C;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14);
+    border-radius: 2px;
+}
+
+#header_foto_div{
+    height: 120%;
+    width: 120%;
+}
+#foto_subcall{
+    border-radius: 999%;
+    width: 210px;
+    height: 210px;
+    align-self: center;
+    margin-left: 12%;
+}
+
+#header_saiba_como{
+    align-self: center;
+    margin-left: 15px;
+}
+
+
+
 
 
 
